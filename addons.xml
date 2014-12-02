@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="script.yamaha.network.control"
+       name="Yamaha Network Control"
+       version="1.0.0"
+       provider-name="Confused">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+	<extension point="xbmc.service" library="service.py" start="login">
+		<provides>executable</provides>
+	</extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Control Yamaha AV Receivers via YNC Protocol</summary>
+    <description lang="en">Allows control of Yamaha AV Receivers via the Yamaha Network Control Protocol. Map remote control buttons to allow direct control of your Yamaha AV receiver from XBMC via the network. Based on code from https://github.com/BirdAPI/yamaha-network-receivers</description>
+    <platform>all</platform>
+ <language>en</language>
+ <disclaimer>Please report any issues with this addon to confusedta@gmail.com</disclaimer>
+  </extension>
+</addon>
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.module.pyserial"
+       name="simplejson"
+       version="2.7.0" 
+       provider-name="Confused">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <language></language>
+    <summary lang="en">Serial port control for Python</summary>
+    <description lang="en">Serial port control for Python</description>
+    <disclaimer lang="en">Code taken from https://pypi.python.org/pypi/pyserial/</disclaimer>
+  </extension>
+</addon>
+
+</addons>
